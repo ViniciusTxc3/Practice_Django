@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^w-l3*nlwp^ku+ypuq1zspcsi^g9@8067n$#pu#ry&x5a(d(&a' 
+SECRET_KEY = 'django-insecure-^w-l3*nlwp^ku+ypuq1zspcsi^g9@8067n$#pu#ry&x5a(d(&a' #gitignore    
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -29,8 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# python manage.py migrate # comando para rodar as aplicações incluidas em INSTALLED_APPS
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
